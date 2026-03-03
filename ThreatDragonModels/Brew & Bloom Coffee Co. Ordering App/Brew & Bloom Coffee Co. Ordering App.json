@@ -555,6 +555,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -638,7 +639,6 @@
               ]
             },
             "id": "64f61ba5-676e-4ef7-9edb-83c2864818d1",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -788,6 +788,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -871,7 +872,6 @@
               ]
             },
             "id": "9e548e93-4211-42c3-932a-67bfad1bb7b7",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Barista",
@@ -913,13 +913,6 @@
                 "spoofing": 2,
                 "repudiation": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -948,6 +941,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1031,7 +1025,6 @@
               ]
             },
             "id": "7c40e411-abe9-4ad3-be9d-bc8fcaaf9f49",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -1125,7 +1118,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "b7cbac66-ec68-4fac-b99b-d4b8bf3b3a26"
+              ]
             },
             "labels": [
               "View Incoming Orders Request"
@@ -1172,7 +1167,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "b7cbac66-ec68-4fac-b99b-d4b8bf3b3a26"
+              ]
             },
             "labels": [
               "Query Order Data"
@@ -1219,7 +1216,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "b7cbac66-ec68-4fac-b99b-d4b8bf3b3a26"
+              ]
             },
             "labels": [
               "Return Order Data"
@@ -1271,7 +1270,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "b7cbac66-ec68-4fac-b99b-d4b8bf3b3a26"
+              ]
             },
             "labels": [
               "Order List"
@@ -1323,7 +1324,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "b7cbac66-ec68-4fac-b99b-d4b8bf3b3a26"
+              ]
             },
             "labels": [
               "Data Flow"
@@ -1375,7 +1378,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "b7cbac66-ec68-4fac-b99b-d4b8bf3b3a26"
+              ]
             },
             "labels": [
               "Update Order Record"
@@ -1393,6 +1398,128 @@
               {
                 "x": 660,
                 "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Untrusted Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Untrusted Boundary"
+            ],
+            "id": "86f0f8a0-ac71-4d10-9e29-97adcb0d3762",
+            "source": {
+              "x": 140,
+              "y": 150
+            },
+            "target": {
+              "x": 100,
+              "y": 610
+            },
+            "vertices": [
+              {
+                "x": 190,
+                "y": 410
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Truste Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "e83b1561-dbf7-4265-b162-8ad6514c1f2f",
+                "1927b3f8-4de2-4cdb-8780-ffb198a64024",
+                "240d04ff-8792-4036-8043-0382e0ee9ee6",
+                "927cc45e-2eb0-4be9-bff1-49c4b31b445e",
+                "930e1fa3-aa7f-439e-9b93-948191825785",
+                "ddff6cf1-1d5f-46df-ab93-7d1b17b48264"
+              ],
+              "containedElements": [
+                "64f61ba5-676e-4ef7-9edb-83c2864818d1"
+              ]
+            },
+            "labels": [
+              "Truste Boundary"
+            ],
+            "id": "b7cbac66-ec68-4fac-b99b-d4b8bf3b3a26",
+            "source": {
+              "x": 440,
+              "y": 180
+            },
+            "target": {
+              "x": 520,
+              "y": 627
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 510
               }
             ]
           }
