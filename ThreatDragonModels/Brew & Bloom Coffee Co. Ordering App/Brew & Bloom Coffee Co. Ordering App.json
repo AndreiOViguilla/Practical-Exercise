@@ -3,7 +3,7 @@
   "summary": {
     "title": "Brew & Bloom Coffee Co. Ordering App",
     "owner": "ANDREI DOMINIC VIGUILLA",
-    "description": "",
+    "description": "The Brew & Bloom Coffee Co. Ordering App is a web-based application that allows customers to place orders online, enables baristas to update order statuses, provides managers with access to basic sales reports, and allows administrators to manage menu items. The system consists of a client-side frontend, a Node.js backend web application server, a MongoDB database, and a third-party payment gateway.",
     "id": 0
   },
   "detail": {
