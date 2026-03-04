@@ -1273,9 +1273,9 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 1,
-                "repudiation": 1,
+                "spoofing": 2,
+                "tampering": 2,
+                "repudiation": 2,
                 "informationDisclosure": 1,
                 "denialOfService": 1,
                 "elevationOfPrivilege": 3
@@ -1426,7 +1426,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 2,
-                "repudiation": 1
+                "repudiation": 2
               }
             }
           },
@@ -1943,14 +1943,13 @@
               "x": 100,
               "y": 610
             },
-            "vertices": [
-              {
-                "x": 190,
-                "y": 410
-              }
-            ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1993,7 +1992,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 190,
+                "y": 410
+              }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
