@@ -11,7 +11,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "New STRIDE diagram",
+        "title": "Customer Places an Order",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -1070,7 +1070,7 @@
       },
       {
         "id": 1,
-        "title": "New STRIDE diagram",
+        "title": "Barista Updates Order Status",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -2088,7 +2088,7 @@
       },
       {
         "id": 2,
-        "title": "New STRIDE diagram",
+        "title": "Manager Accesses Basic Sales Reports",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -2938,7 +2938,7 @@
       },
       {
         "id": 3,
-        "title": "New STRIDE diagram",
+        "title": "Administrator Adds New Menu Item",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
