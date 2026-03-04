@@ -2443,6 +2443,19 @@
                   "new": false,
                   "number": 23,
                   "score": ""
+                },
+                {
+                  "id": "0ea324e1-c2c0-44c9-8245-5aeb7dd523a1",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 60,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -2450,9 +2463,16 @@
                 "tampering": 2,
                 "repudiation": 2,
                 "informationDisclosure": 2,
-                "denialOfService": 2,
+                "denialOfService": 3,
                 "elevationOfPrivilege": 4
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -3793,6 +3813,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 59
+    "threatTop": 60
   }
 }
