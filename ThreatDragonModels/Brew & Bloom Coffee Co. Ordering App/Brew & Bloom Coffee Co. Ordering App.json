@@ -2905,6 +2905,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -2988,7 +2989,6 @@
               ]
             },
             "id": "6a855620-d0cb-4aff-b534-20e68874d1fa",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
@@ -3053,6 +3053,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -3136,7 +3137,6 @@
               ]
             },
             "id": "0979c2a5-2c4b-44da-8db3-79132f407729",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -3280,6 +3280,8 @@
             "tools": {
               "items": [
                 "boundary",
+                "button-remove",
+                "boundary",
                 "button-remove"
               ],
               "name": null
@@ -3311,6 +3313,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -3394,7 +3397,6 @@
               ]
             },
             "id": "473008f8-128f-4e66-8ca8-35df0387c3ce",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
